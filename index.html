@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Wonders</title>   
+
+  <style>
+    /* Reset some default styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://www.w3schools.com/w3images/forest.jpg'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: rgba(76, 175, 80, 0.8); /* Transparent green */
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    /* Section styling */
+    section {
+      margin: 20px auto;
+      width: 80%;
+      background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    /* Button styling */
+    .btn {
+      background-color: #008CBA; /* Blue color like the sky or water */
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Button hover effect */
+    .btn:hover {
+      background-color: #007B9E;
+    }
+
+    /* Nature image styling */
+    .nature-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    /* Back link styling */
+    .back-link {
+      text-decoration: none;
+      font-size: 1.1em;
+      color: #008CBA;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    .back-link:hover {
+      color: #007B9E;
+    }
+
+    /* Additional section styling */
+    .nature-section {
+      margin: 20px 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .nature-section h2 {
+      margin-bottom: 20px;
+    }
+
+    .nature-section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Main content (Index) -->
+  <div id="main-content">
+    <header>
+      <h1>Exploring the Wonders of Nature</h1>
+    </header>
+
+    <section>
+      <p>
+        Nature is full of beauty and endless inspiration. From towering trees to vibrant flowers, the natural world is a testament to the incredible forces that shape our planet. We must cherish and protect nature for future generations.
+      </p>
+      <button class="btn" onclick="showDiscoverPage()">Discover More</button>
+
+      <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Nature Scenery" class="nature-image">
+    </section>
+
+    <div class="nature-section">
+      <h2>Explore the Forest</h2>
+      <p>
+        The forest is a complex ecosystem filled with towering trees, flowing streams, and abundant wildlife. Forests help regulate our climate, absorb carbon dioxide, and provide habitats for millions of species. Let’s take a look at the incredible diversity of life in the forest.
+      </p>
+      <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Forest Scenery">
+    </div>
+
+    <div class="nature-section">
+      <h2>Admire the Mountains</h2>
+      <p>
+        Mountains are majestic and awe-inspiring. They are home to unique plant and animal species, and their peaks often reach above the clouds. The alpine ecosystems support a delicate balance of life, and mountain ranges like the Himalayas and the Rockies are essential to our planet's biodiversity.
+      </p>
+      <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountain Scenery">
+    </div>
+
+  </div>
+
+  <!-- Discover More Page -->
+  <div id="discover-content" style="display:none;">
+    <header>
+      <h1>Discover More About Nature</h1>
+    </header>
+
+    <section>
+      <p>
+        Nature is an incredible source of inspiration, filled with life, color, and vitality. Explore forests, oceans, mountains, and deserts—each landscape holds unique beauty and mystery. Learn how to preserve these precious ecosystems!
+      </p>
+      <button class="btn" onclick="showWildlifePage()">Explore Wildlife</button>
+      <button class="btn" onclick="showPlantsPage()">Discover Plants</button>
+      <button class="btn" onclick="showConservationPage()">Conservation Efforts</button>
+
+      <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Nature Scenery" class="nature-image">
+
+      <a href="javascript:void(0);" class="back-link" onclick="showMainPage()">Back to Home</a>
+    </section>
+
+    <div class="nature-section">
+      <h2>The Ocean's Mysteries</h2>
+      <p>
+        The ocean covers more than 70% of the Earth's surface and is home to a vast array of life, from microscopic plankton to massive whales. The ocean's currents, tides, and ecosystems influence the climate and weather patterns of the planet. Protecting our oceans is crucial to maintaining balance in the Earth’s system.
+      </p>
+      <img src="https://www.w3schools.com/w3images/ocean.jpg" alt="Ocean Scenery">
+    </div>
+
+    <div class="nature-section">
+      <h2>The Desert's Hidden Beauty</h2>
+      <p>
+        Deserts might seem like barren wastelands, but they are full of life. Unique plant and animal species have adapted to survive extreme conditions, and the desert's landscapes can be both stunning and serene. The Sahara Desert, for example, is a vast expanse of golden sands and ancient rock formations.
+      </p>
+      <img src="https://www.w3schools.com/w3images/desert.jpg" alt="Desert Scenery">
+    </div>
+
+  </div>
+
+  <!-- Wildlife Page -->
+  <div id="wildlife-content" style="display:none;">
+    <header>
+      <h1>Wildlife in Nature</h1>
+    </header>
+
+    <section>
+      <p>
+        Wildlife plays an essential role in maintaining the balance of ecosystems. From majestic elephants in the savanna to the tiny insects in the forest, each species contributes to the health of our planet. Many animals are facing threats like habitat loss and climate change, making conservation efforts vital.
+      </p>
+      <button class="btn" onclick="showWildlifePage()">Learn About Endangered Species</button>
+
+      <img src="https://www.w3schools.com/w3images/tiger.jpg" alt="Wildlife" class="nature-image">
+
+      <a href="javascript:void(0);" class="back-link" onclick="showDiscoverPage()">Back to Discover</a>
+    </section>
+
+    <div class="nature-section">
+      <h2>Endangered Species</h2>
+      <p>
+        Around the world, many animal species are endangered due to human activity, including deforestation, poaching, and pollution. Protecting endangered species is critical not only for biodiversity but for the health of ecosystems. Some notable endangered species include the Amur leopard, giant panda, and Sumatran orangutan.
+      </p>
+      <img src="https://www.w3schools.com/w3images/panda.jpg" alt="Endangered Species">
+    </div>
+
+  </div>
+
+  <!-- Plants Page -->
+  <div id="plants-content" style="display:none;">
+    <header>
+      <h1>Plants of the World</h1>
+    </header>
+
+    <section>
+      <p>
+        Plants are the foundation of all life on Earth, providing oxygen, food, and habitat for countless species. From towering trees to delicate flowers, plants have adapted to a variety of climates and environments. Preserving plant diversity is essential to the health of ecosystems and the planet.
+      </p>
+      <button class="btn" onclick="showPlantsPage()">Learn About Medicinal Plants</button>
+
+      <img src="https://www.w3schools.com/w3images/flowers.jpg" alt="Plants" class="nature-image">
+
+      <a href="javascript:void(0);" class="back-link" onclick="showDiscoverPage()">Back to Discover</a>
+    </section>
+
+    <div class="nature-section">
+      <h2>Medicinal Plants</h2>
+      <p>
+        Many plants have been used for centuries in traditional medicine. Some of these plants contain powerful compounds that can treat ailments or promote healing. For example, the aloe vera plant is known for its soothing properties, and the ginseng plant is valued for its energy-boosting effects.
+      </p>
+      <img src="https://www.w3schools.com/w3images/plants.jpg" alt="Medicinal Plants">
+    </div>
+
+  </div>
+
+  <!-- Conservation Efforts Page -->
+  <div id="conservation-content" style="display:none;">
+    <header>
+      <h1>Conservation Efforts Around the World</h1>
+    </header>
+
+    <section>
+      <p>
+        Conservation efforts are critical to ensuring the survival of nature's wonders. Organizations around the world are working tirelessly to protect endangered species, preserve habitats, and combat climate change. You can help too by supporting conservation initiatives and adopting sustainable practices.
+      </p>
+      <button class="btn" onclick="showConservationPage()">Learn How You Can Help</button>
+
+      <img src="https://www.w3schools.com/w3images/volunteer.jpg" alt="Conservation Efforts" class="nature-image">
+
+      <a href="javascript:void(0);" class="back-link" onclick="showDiscoverPage()">Back to Discover</a>
+    </section>
+
+    <div class="nature-section">
+      <h2>Saving the Rainforests</h2>
+      <p>
+        Rainforests are vital for maintaining the Earth's climate and biodiversity. However, they are being rapidly destroyed due to logging, agriculture, and urbanization. Conservationists are working to protect these ecosystems through reforestation efforts, land preservation, and sustainable agriculture practices.
+      </p>
+      <img src="https://www.w3schools.com/w3images/rainforest.jpg" alt="Rainforest">
+    </div>
+
+  </div>
+
+  <script>
+    // Show the Discover page and hide the main page
+    function showDiscoverPage() {
+      document.getElementById("main-content").style.display = "none";
+      document.getElementById("discover-content").style.display = "block";
+    }
+
+    // Show the Wildlife page
+    function showWildlifePage() {
+      document.getElementById("discover-content").style.display = "none";
+      document.getElementById("wildlife-content").style.display = "block";
+    }
+
+    // Show the Plants page
+    function showPlantsPage() {
+      document.getElementById("discover-content").style.display = "none";
+      document.getElementById("plants-content").style.display = "block";
+    }
+
+    // Show the Conservation Efforts page
+    function showConservationPage() {
+      document.getElementById("discover-content").style.display = "none";
+      document.getElementById("conservation-content").style.display = "block";
+    }
+
+    // Show the main page and hide the Discover page
+    function showMainPage() {
+      document.getElementById("main-content").style.display = "block";
+      document.getElementById("discover-content").style.display = "none";
+      document.getElementById("wildlife-content").style.display = "none";
+      document.getElementById("plants-content").style.display = "none";
+      document.getElementById("conservation-content").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
